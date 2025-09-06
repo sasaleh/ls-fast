@@ -1,12 +1,10 @@
-/*
- *
- * * List directories using getdents() because ls, find and Python libraries
- * * use readdir() which is slower (but uses getdents() underneath.
- * * Compile with
- *
- * * ]$ gcc  ls-fast.c
- *
- * */
+/**
+** This is hlepful when ls fails due to timeouts or other file system issues.
+** List directories using getdents() because ls, find and Python libraries
+** use readdir() which is slower (but uses getdents() underneath.
+** Compile with
+** ]$ gcc  ls-fast.c
+**/
 #define _GNU_SOURCE
 #include <dirent.h>     /* Defines DT_* constants */
 #include <fcntl.h>
