@@ -1,11 +1,7 @@
 /*
  *
  * * List directories using getdents() because ls, find and Python libraries
- *
  * * use readdir() which is slower (but uses getdents() underneath.
- *
- * *
- *
  * * Compile with
  *
  * * ]$ gcc  ls-fast.c
